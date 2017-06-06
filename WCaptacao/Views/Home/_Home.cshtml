@@ -1,32 +1,84 @@
-﻿<!-- ko with: home -->
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <h2>Your information</h2>
-        <p>This section shows how you can call ASP.NET Web API to get the user details.</p>
-        <p data-bind="text: myHometown"></p>
-       
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=273732">Learn more &raquo;</a></p>
-    </div>
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>W Captação</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET Single Page Application (SPA) helps you build applications that include significant client-side interactions using HTML, CSS, and JavaScript.
-            It's now easier than ever before to getting started writing highly interactive web applications.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=273732">Learn more &raquo;</a></p>
-    </div>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
 
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body class="container">
 
-<!-- /ko -->
+    <section class="row">
+
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+
+                    <h2 class="panel-title"> Menu</h2>
+
+                </div>
+
+                <div class="panel-body">
+
+
+                    <ul class="nav nav-pills nav-stacked">
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-phone-alt"></span>  Chamados  </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="#"> Realizar Chamado </a></li>
+                                <li><a href="#"> Chamados em aberto </a></li>
+                                <li><a href="#"> Lista de Chamados </a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>  Cadastros  </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="#"> Agentes </a></li>
+                                <li><a href="#"> Alunos </a></li>
+
+
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-file"></span>  Aquivos  </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="#"> Gerar Relatórios </a></li>
+                                <li><a href="#"> Carregar lista de alunos </a></li>
+
+
+
+                            </ul>
+                        </li>
+
+
+
+
+                    </ul><!-- FIM 	DO NAV - PARA NAVEGACAO -->
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+</body>
+</html>
