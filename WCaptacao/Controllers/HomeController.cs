@@ -12,5 +12,17 @@ namespace WCaptacao.Controllers
         {
             return View();
         }
+        public ActionResult TelaAdmin()
+        {
+            return View();
+        }
+       public ActionResult TelaCoordenador()
+        {
+            return View();
+        }
+        public ActionResult TelaAgente()
+        {
+            return View();
+        }
     }
 }
