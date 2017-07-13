@@ -11,7 +11,7 @@
 </head>
 <body >
 
-    <nav class="navbar-default navbar-fixed-top" >
+    <nav class="navbar-inverse navbar-fixed-top" >
 
 
         <div class="navbar-header">
@@ -21,47 +21,23 @@
                 <span class="icon-bar"></span>
             </button>
 
+            <img src="~/Content/img/Logo2.png" class="img-responsive" alt="Responsive image">
+           
 
-            <img src="~/Content/imagens/logoApp.jpg" />
-
-
-        </div>
+</div>
         <div class="navbar-collapse collapse">
            
             <ul class="nav navbar-nav">
              
-              <li>@Html.ActionLink("Início", "Index", "Home", new { area = "" }, null)</li>
-
-
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                          Menu
-                        <span class="caret"></span>
-                    </a>
-
-                    <ul class="dropdown-menu">
-               
-                        <li><a href="#"> Realizar Chamado </a></li>
-                        <li><a href="#"> Chamados em aberto </a></li>
-                        <li><a href="#"> Lista de Chamados </a></li>
-
-                        <li>@Html.ActionLink("Sobre", "Index", "Help", new { area = "HelpPage" }, null)</li>
-
-                        <li role="separator" class="divider"></li>
-
-                        <li>@Html.ActionLink("Sair", "Login", "Account", routeValues: new { area = "" }, htmlAttributes: new { id = "loginLink" })</li>
-                            </ul>
-                  
+              <li>@Html.ActionLink("W Captação", "Index", "Home", new { area = "" }, null)
          
                     </ul>
 
-                    @Html.Partial("_LoginPartial")
-
-                    </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>@Html.ActionLink("Registrar", "Register", "Account", routeValues: new { area = "" }, htmlAttributes: new { id = "registerLink" })</li>
-                <li>@Html.ActionLink("Fazer logon", "Login", "Account", routeValues: new { area = "" }, htmlAttributes: new { id = "loginLink" })</li>
+   
+                   
+            <ul class="nav navbar-nav navbar-right"> 
+                <li>@Html.ActionLink("Registrar", "Register", "Account", new { area = "" },null)</li>
+                <li>@Html.ActionLink("Fazer logon", "Login", "Account", new { area = "" }, null)</li>
             </ul>
 
                  </div>
@@ -70,8 +46,12 @@
     <div class="container body-content">
         @RenderBody()
         @RenderSection("SPAViews", required: false)
-        <hr />
-        <footer></footer>
+       
+        <footer>
+           
+
+
+        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
